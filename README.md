@@ -1,3 +1,3 @@
 # portfolioProject
-バックエンドにdjjango フロントエンドにreactを使用
+バックエンドにdjjango フロントエンドにreactを使用<br/>
 フロントエンドのみしか開発が進められていないが、後々にバックエンドにも機能を追加しwebアプリとする予定

@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "webpack --mode development --entry ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/",
     "watch": "webpack --mode development --watch ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/",
-    "build": "webpack --mode production --entry ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/"
+    "build": "webpack --mode production --entry ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",

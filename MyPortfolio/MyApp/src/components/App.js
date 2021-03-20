@@ -1,11 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import Navbar from "./Navbar";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+// import { useHistory, useLocation } from 'react-router-dom';
+
+// components
+
 const App = () => {
   return (
-    <div>
-      <p>React here!</p>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route  path="/" exact />
+        </Switch>
+      </Router>
+    </>
   );
 };
 export default App;
-ReactDOM.render(<App />, document.getElementById("app"));

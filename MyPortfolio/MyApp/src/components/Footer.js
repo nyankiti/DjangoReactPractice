@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <div id="contact" className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+        Have a question or want to work together?
         </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+        Write anything you want.
         </p>
         <div className='input-areas'>
           <form>
@@ -63,12 +63,12 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/myapp/' className='social-logo'>
+            {/* <Link to='/myapp/' className='social-logo'>
               TRVL
               <i className='fab fa-typo3' />
-            </Link>
+            </Link> */}
           </div>
-          <small className='website-rights'>TRVL © 2020</small>
+          <small className='website-rights'></small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'

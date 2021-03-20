@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './Navbar.css';
 // components
 import Button from './Button';
@@ -34,49 +33,49 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          {/* <Link to='/myapp/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/myapp/' className='navbar-logo' onClick={closeMobileMenu}>
             TRVL
             <i className='fab fa-typo3' />
-          </Link> */}
+          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <AnchorLink offset='800' href="#home" className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/myapp/' className='nav-links' onClick={closeMobileMenu}>
                 Home
-              </AnchorLink>
+              </Link>
             </li>
             <li className='nav-item'>
-              <AnchorLink
-                href='#about'
+              <Link
+                to='/myapp/services'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                About
-              </AnchorLink>
+                Services
+              </Link>
             </li>
             <li className='nav-item'>
-              <AnchorLink
-                href='#works'
+              <Link
+                to='/myapp/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Works
-              </AnchorLink>
+                Products
+              </Link>
             </li>
 
             <li>
-              <AnchorLink
-                href='#contact'
-                className='nav-links'
+              <Link
+                to='/myapp/sign-up'
+                className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Contact
-              </AnchorLink>
+                Sign Up
+              </Link>
             </li>
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>

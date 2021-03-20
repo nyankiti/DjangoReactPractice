@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --entry ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/",
+    "watch": "webpack --mode development --watch ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/",
     "build": "webpack --mode production --entry ./MyPortfolio/MyApp/src/index.js --output-path ./MyPortfolio/MyApp/static/MyApp/"
   },
   "keywords": [],
@@ -16,10 +17,17 @@
     "@babel/preset-react": "7.12.13",
     "babel-loader": "8.2.2",
     "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "5.1.3",
     "prop-types": "15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "style-loader": "2.0.0",
     "webpack": "5.26.3",
     "webpack-cli": "4.5.0"
+  },
+  "dependencies": {
+    "react-router-dom": "5.2.0"
   }
 }
